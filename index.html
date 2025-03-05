@@ -7,22 +7,48 @@
     <script src="https://cdn.tailwindcss.com"></script> 
 </head>
 <body>
-    <!-- Fullscreen background image -->
-    <div class="min-h-screen bg-[url('/bgimage.png')] bg-center bg-cover bg-no-repeat">
-        <!-- Navigation Bar -->
-        <nav class="flex items-center justify-between px-5 py-4">
-            <!-- Logo without padding affecting it -->
-            <img src="logo1.png" alt="logo" class="w-30 cursor-pointer">
-            <!-- Navigation Links -->
-            <ul class="flex space-x-5 items-center">
-                <li><a href="#" class="no-underline text-white px-2">Home</a></li>
-                <li><a href="#" class="no-underline text-white px-2">Donate Food</a></li>
-                <li><a href="#" class="no-underline text-white px-2">Request Food</a></li>
-                <li><a href="#" class="no-underline text-white px-2">About Us</a></li>
-                <li><a href="#" class="no-underline text-white px-2">Sign Up</a></li>
-                <li><a href="#" class="no-underline text-white px-2">Dash Board</a></li>
-            </ul>
-        </nav>
+    <!-- Fullscreen background image with overlay -->
+    <div class="relative min-h-screen bg-[url('/bgimage.png')] bg-center bg-cover bg-no-repeat">
+        
+        <!-- Overlay to reduce intensity -->
+        <div class="absolute inset-0 bg-black bg-opacity-15"></div>
+
+        <!-- Content -->
+        <div class="relative z-10">
+            <!-- Navigation Bar -->
+            <nav class="flex justify-end px-5 py-4">
+                <ul class="flex space-x-5 items-center">
+                    <li><a href="#" class="no-underline text-white px-2 py-2 hover:text-orange-100 font-semibold hover:border-orange-100 transition duration-300 text-1xl">Home</a></li>
+                    <li><a href="#" class="no-underline text-white px-2 hover:text-orange-100 font-semibold hover:border-orange-100 transition duration-300 text-1xl">Donate Food</a></li>
+                    <li><a href="#" class="no-underline text-white px-2 hover:text-orange-100 font-semibold hover:border-orange-100 transition duration-300 text-1xl">Request Food</a></li>
+                    <li><a href="#" class="no-underline text-white px-2 hover:text-orange-100 font-semibold hover:border-orange-100 transition duration-300 text-1xl">About Us</a></li>
+                    <li><a href="#" class="no-underline text-white px-2 hover:text-orange-100 font-semibold hover:border-orange-100 transition duration-300 text-1xl">Sign Up</a></li>
+                    <li><a href="#" class="no-underline text-white px-2 hover:text-orange-100 font-semibold hover:border-orange-100 transition duration-300 text-1xl">Dash Board</a></li>
+                </ul>
+            </nav>
+
+            <!-- Logo and Text -->
+            <div class="flex items-start px-5 py-5">
+                <img src="logo1.png" alt="logo" class="w-30 cursor-pointer">
+                
+                <div class="ml-56 text-white font-semibold max-w-xl mt-28">
+                    <p class="text-xs md:text-sm lg:text-lg leading-relaxed tracking-wide mt-10 shadow-lg text-black font-semibold 
+    bg-gradient-to-r from-black to-white text-transparent bg-clip-text 
+    p-2 rounded-xl border-2 border-black shadow-xl max-w-lg 
+    hover:scale-105 transition-transform duration-300 bg-opacity-70 bg-black text-white">
+    In a world filled with abundance, no one should ever go hungry. Our platform bridges the gap between excess food and the people who need it the most. With a simple yet powerful mission, we empower individuals and organizations to donate food, turning leftovers into life-changing meals. Every donation counts, no matter how small. By coming together, we can create a community where no one has to worry about where their next meal will come from.
+
+    <span class="italic font-bold">Join us in making a difference—because when we share, we change lives.</span>
+</p>
+                </div>
+            </div>
+
+            <!-- Buttons -->
+            <div class="mt-10 px-5">
+                <a href="#" class="bg-orange-400 rounded-3xl text-black px-3 py-3 font-medium hover:bg-transparent hover:border-orange-400 hover:border hover:text-black duration-300"> Donate Now</a>
+                <a href="#" class="bg-orange-400 rounded-3xl text-black px-3 py-3 font-medium hover:bg-transparent hover:border-orange-400 hover:border hover:text-black duration-300"> Download app</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
