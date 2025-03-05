@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS - GUI Setup</title>
+    <script src="https://cdn.tailwindcss.com"></script> 
+</head>
+<body>
+    <!-- Fullscreen background image -->
+    <div class="min-h-screen bg-[url('/bgimage.png')] bg-center bg-cover bg-no-repeat">
+        <!-- Navigation Bar -->
+        <nav class="flex items-center justify-between px-5 py-4">
+            <!-- Logo without padding affecting it -->
+            <img src="logo1.png" alt="logo" class="w-30 cursor-pointer">
+            <!-- Navigation Links -->
+            <ul class="flex space-x-5 items-center">
+                <li><a href="#" class="no-underline text-white px-2">Home</a></li>
+                <li><a href="#" class="no-underline text-white px-2">Donate Food</a></li>
+                <li><a href="#" class="no-underline text-white px-2">Request Food</a></li>
+                <li><a href="#" class="no-underline text-white px-2">About Us</a></li>
+                <li><a href="#" class="no-underline text-white px-2">Sign Up</a></li>
+                <li><a href="#" class="no-underline text-white px-2">Dash Board</a></li>
+            </ul>
+        </nav>
+    </div>
+</body>
+</html>
